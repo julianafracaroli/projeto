@@ -1,0 +1,31 @@
+.body{
+
+    width: 800px;
+    margin: 0px auto;
+}
+.menu{
+  background-color: tomato;
+}
+*{
+  margin: 0px;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+img{
+  height: 20px;
+  padding-right: 10px;
+
+}
+.nome{
+
+float:left;
+
+}
+.dados-pessoais{
+  float: right;
+}
+.limpar-float{
+  clear: both;
+}
