@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!--importação do bootstrap-->
+  <link rel="stylesheet" href="bootstrap/bootstrap.css">
+  <!-- importação do jquery-->
+  <script src="js/jquery-3.4.1.js"></script>
+  <!--utilização do javascript, jquery-->
+  <script>
+    $(document).ready(function(){
+      //cria um evento ao clicar no botão com o id
+      $("#btnEsconder").click(function(){
+        alert("Funcionou!");
+        $("p").hide();
+      });
+
+      $("#btnMostrar").click(function(){
+          $("p").show();
+      });
+
+      $("#btndadospessoais").click(function(){
+        $(".dadospessoais").show();
+      });
+      $("#btndadoscontatos").click(function(){
+        $(".dadosdecontato").show();
+        });
+      $("#btndadosacademicos").click(function(){
+        $(".dadosacademicos").show();
+      });
+
+    });  // fim ready
+
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Introdução ao jQuery</h2>
+    <p>Juliana Fracaroli</p>
+    <button type="button" class="btn btn-info" id=btnEsconder>Esconder</button>
+    <button type="button" class="btn btn-info" id=btnMostrar>Mostrar</button>
+    <hr>
+    <button type="button" class="btn btn-info" id="btndadospessoais">Dados Pessoais</button>
+    <button type="button" class="btn btn-info" id="btndadoscontatos">Dados de Contatos</button>
+    <button type="button"class="btn btn-info" id="btndadosacademicos">Dados Acadêmicos</button>
+
+    <div class="dadospessoais" style="display: none;">
+      <h2>Dados Pessoais</h2>
+      <p>Idade: 17 anos;</p>
+      <p>Endereço: Rua Hermenegildo Medeiros;</p>
+    </div>
+
+    <div class="dadosdecontato" style="display: none;">
+      <h2>Dados de Contatos</h2>
+      <p>Email: julianacfracaroli@gmail.com;</p>
+      <p>Número: (44)997536287;</p>
+    </div>
+
+    <div class="dadosacademicos" style="display: none;">
+      <h2>Dados Acadêmicos</h2>
+      <p>Técnico em Informática Integrado ao Ensino Médio - IFPR;</p>
+    </div>
+
+  </div>
+</body>
+</html>
